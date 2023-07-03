@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloWelt", "HalloWelt\HalloWelt.csproj", "{A00AABC6-F6EB-4860-AB88-DC08F3230ADE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M02_Grundlagen", "HalloWelt\M02_Grundlagen.csproj", "{A00AABC6-F6EB-4860-AB88-DC08F3230ADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L02_Geschwindigkeitsrechner", "Geschwindigkeitsrechner\L02_Geschwindigkeitsrechner.csproj", "{C8874317-6713-422B-9614-84B63E7CA988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays_Bedingungen", "Arrays_Bedingungen\Arrays_Bedingungen.csproj", "{E892477F-FCAA-4BDF-8567-5F61F52FE3CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{A00AABC6-F6EB-4860-AB88-DC08F3230ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A00AABC6-F6EB-4860-AB88-DC08F3230ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A00AABC6-F6EB-4860-AB88-DC08F3230ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8874317-6713-422B-9614-84B63E7CA988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8874317-6713-422B-9614-84B63E7CA988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8874317-6713-422B-9614-84B63E7CA988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8874317-6713-422B-9614-84B63E7CA988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E892477F-FCAA-4BDF-8567-5F61F52FE3CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E892477F-FCAA-4BDF-8567-5F61F52FE3CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E892477F-FCAA-4BDF-8567-5F61F52FE3CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E892477F-FCAA-4BDF-8567-5F61F52FE3CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
