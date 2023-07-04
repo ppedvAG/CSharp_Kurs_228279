@@ -93,7 +93,8 @@ Zeilenumbruch {Stadt}";
 
 
             //Umwandlung durch Convert.To[]()-Funktion
-            zahl = Convert.ToInt32(78.45);
+            zahl = Convert.ToInt32(78.65);
+            Console.WriteLine(zahl);
 
             //Bsp für numerische Umwandlung (implizit, da kein Datenverlust)
             int intZahl = 78;
