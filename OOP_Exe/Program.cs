@@ -28,6 +28,22 @@ namespace OOP_Exe
             lebewesen2.Wachse();
             Lebewesen kind = lebewesen1.ProduziereNachwuchs("Maria");
             #endregion
+
+
+            for (int i = 0; i < 1000; i++)
+            {
+                lebewesen1 = new Lebewesen($"Lebewesen Nr.{i}", "Egal", DateTime.Now, 100);
+            }
+
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+
+
+            Lebewesen.ZeigeAnzahlAllerLebewesen();
+
+
+
+
         }
     }
 }

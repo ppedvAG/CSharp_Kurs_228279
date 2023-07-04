@@ -52,6 +52,8 @@ namespace LibraryBsp
             this.Lieblingsnahrung = lieblingsnahrung;
             this.Geburtsdatum = geburtstag;
             this.Größe = größe;
+
+            Lebewesen.AnzahlLebewesen++;
         }
 
         //Es können mehrere Konstruktoren definiert werden, welche unterschiedliche Übergabeparameter haben (Überladung). Ein Konstruktor, der keine
@@ -76,6 +78,24 @@ namespace LibraryBsp
         }
 
         #endregion
+
+        #region Destruktor
+
+        ~Lebewesen()
+        {
+            Console.WriteLine($"{this.Name} ist leider verstorben");
+            Lebewesen.AnzahlLebewesen--;
+        }
+
+        #endregion
+
+
+        public static int AnzahlLebewesen { get; set; } = 0;
+
+        public static void ZeigeAnzahlAllerLebewesen()
+        {
+            Console.WriteLine($"Es existieren momentan {Lebewesen.AnzahlLebewesen} Lebewesen auf der Welt.");
+        }
 
     }
 }
