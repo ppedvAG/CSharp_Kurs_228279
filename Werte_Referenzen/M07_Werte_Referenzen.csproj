@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LibraryBsp\M06_LibraryBsp.csproj" />
+    <ProjectReference Include="..\LibraryBsp\M06f_LibraryBsp.csproj" />
   </ItemGroup>
 
 </Project>

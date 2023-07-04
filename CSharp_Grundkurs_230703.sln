@@ -19,13 +19,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M05_Funktionen", "Funktione
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L05_Taschenrechner02", "Taschenrechner02\L05_Taschenrechner02.csproj", "{D3348CB8-6FF9-4D2A-9499-EC07F7651398}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M06_LibraryBsp", "LibraryBsp\M06_LibraryBsp.csproj", "{6A7F2C5B-7EF9-41E3-8F95-51E6D26A9965}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M06f_LibraryBsp", "LibraryBsp\M06f_LibraryBsp.csproj", "{6A7F2C5B-7EF9-41E3-8F95-51E6D26A9965}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M06_OOP_Exe", "OOP_Exe\M06_OOP_Exe.csproj", "{9117C2B4-47D4-4E11-91F5-73A48896B236}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M06f_OOP_Exe", "OOP_Exe\M06f_OOP_Exe.csproj", "{9117C2B4-47D4-4E11-91F5-73A48896B236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrzeugpark", "Fahrzeugpark\Fahrzeugpark.csproj", "{042FFDD9-1682-4602-99F7-C841701CF4DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L06f_Fahrzeugpark", "Fahrzeugpark\L06f_Fahrzeugpark.csproj", "{042FFDD9-1682-4602-99F7-C841701CF4DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Werte_Referenzen", "Werte_Referenzen\Werte_Referenzen.csproj", "{17EDC293-6CD2-45B3-B5FE-F8DC6D3D774A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M07_Werte_Referenzen", "Werte_Referenzen\M07_Werte_Referenzen.csproj", "{17EDC293-6CD2-45B3-B5FE-F8DC6D3D774A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

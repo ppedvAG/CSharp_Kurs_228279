@@ -18,13 +18,18 @@ namespace Fahrzeugpark
         public bool MotorLäuft { get; set; }
 
         //Konstruktor mit Übergabeparametern und Standartwerten
-        public Fahrzeug(string name, int maxG, double preis)
+        public Fahrzeug(string name, int maxG, double preis) : this()
         {
             this.Name = name;
             this.MaxGeschwindigkeit = maxG;
             this.Preis = preis;
             this.AktGeschwindigkeit = 0;
             this.MotorLäuft = false;
+        }
+
+        public Fahrzeug()
+        {
+            Fahrzeug.AnzahlAllerFahrzeuge++;
         }
 
         //Methode zur Ausgabe von Objektinformationen
@@ -76,6 +81,26 @@ namespace Fahrzeugpark
 
                 Console.WriteLine($"{this.Name} bewegt sich jetzt mit {this.AktGeschwindigkeit}km/h");
             }
+        }
+
+        #endregion
+
+        #region Lab 07: Statische Member, Destruktor
+        //Der optionale DESTRUCTOR wird von der GaebageCollection bei Zerstörung (Speicherferigabe) des Objekts aufgerufen.
+        ~Fahrzeug()
+        {
+            Console.WriteLine($"{this.Name} ist verschrottet worden.");
+            AnzahlAllerFahrzeuge--;
+        }
+
+
+        //STATIC markiert statische Member. D.h. diese gelten für die Gesamtheit aller Objekte dieser Art und werden nicht für
+        //jedes Objekt einzeln erstellt.
+        public static int AnzahlAllerFahrzeuge { get; private set; } = 0;
+
+        public static string BeschreibeAnzahlAllerFahrzeuge()
+        {
+            return $"Es wurden bist jetzt {AnzahlAllerFahrzeuge} Fahrzeuge produziert.";
         }
 
         #endregion

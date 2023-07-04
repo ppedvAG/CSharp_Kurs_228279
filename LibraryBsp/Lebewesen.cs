@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -53,15 +54,15 @@ namespace LibraryBsp
             this.Geburtsdatum = geburtstag;
             this.Größe = größe;
 
-            Lebewesen.AnzahlLebewesen++;
+            Lebewesen.AnzahlAllerLebewesen++;
         }
 
         //Es können mehrere Konstruktoren definiert werden, welche unterschiedliche Übergabeparameter haben (Überladung). Ein Konstruktor, der keine
         //Übergabeparameter hat, wird als Basiskonstruktor bezeichnet
-        public Lebewesen()
-        {
+        //public Lebewesen()
+        //{
 
-        }
+        //}
         #endregion
 
         #region Methoden
@@ -72,30 +73,43 @@ namespace LibraryBsp
             this.Größe++;
         }
 
-        public Lebewesen ProduziereNachwuchs(string kindname)
+        public virtual Lebewesen ProduziereNachwuchs(string kindname)
         {
             return new Lebewesen(kindname, "Babynahrung", DateTime.Now, 30);
         }
 
         #endregion
 
+        #region Statische Member
+
+        //STATISCHE Variablen und Methoden hängen an der Klasse selbst und nicht an instanziierten Objekten. Sie existieren demnach unabhängig von der Anzahl
+        ///der Objekte genau einmal. Der Aufruf erfolgt über den Klassenbezeichner.
+        public static int AnzahlAllerLebewesen { get; set; } = 0;
+
+        public static void ZeigeAnzahlAllerLebewesen()
+        {
+            Console.WriteLine($"Es gibt {AnzahlAllerLebewesen} Lebewesen.");
+        }
+
+        #endregion
+
         #region Destruktor
 
+        //Der DESTRUKTOR wird von der GarbageCollection aufgerufen, wenn das Objekt nicht
+        //mehr referenziert ist. Hier können Aktionen definiert werden,
+        //welche zusätzlich zur 'Zerstörung' erfolgen sollen.
         ~Lebewesen()
         {
-            Console.WriteLine($"{this.Name} ist leider verstorben");
-            Lebewesen.AnzahlLebewesen--;
+            Console.WriteLine($"{this.Name} ist gestorben.");
+            AnzahlAllerLebewesen--;
         }
 
         #endregion
 
 
-        public static int AnzahlLebewesen { get; set; } = 0;
-
-        public static void ZeigeAnzahlAllerLebewesen()
+        public override string ToString()
         {
-            Console.WriteLine($"Es existieren momentan {Lebewesen.AnzahlLebewesen} Lebewesen auf der Welt.");
+            return this.Name;
         }
-
     }
 }
