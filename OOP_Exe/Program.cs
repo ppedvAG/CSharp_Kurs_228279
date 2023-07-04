@@ -52,15 +52,29 @@ namespace OOP_Exe
             #endregion
 
 
-            Mensch mensch1 = new Mensch("Anna", "Nass", "Pizza", new DateTime(2002, 2, 3), 156);
+            #region Modul 08: Vererbung
 
-            Mensch kind = (Mensch)mensch1.ProduziereNachwuchs("Hanna");
-            Console.WriteLine(kind.Vorname);
+            //Instanziierung eines Objekts der vererbenden Klasse
+            Lebewesen lebewesen = new Lebewesen("Bello", "Fleisch", new DateTime(2007, 4, 23), 70);
+            //Instanziierung eines Objekts der abgeleiteten Klasse
+            Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6), 189);
+            Mensch mensch2 = (Mensch)mensch.ProduziereNachwuchs("Maria");
+            //Aufruf von Properties und Methoden, welche aus der Mutterklasse stammen
+            Console.WriteLine(mensch.Alter);
+            Console.WriteLine(mensch.Name);
 
-            Lebewesen lebewesen2 = new Lebewesen("Bello", "Knochen", new DateTime(2020, 3, 15), 50);
-            Console.WriteLine(lebewesen2.ToString());
-            Console.WriteLine(mensch1.ToString());
+            //Aufruf einer Property der abgeleiteten Klasse
+            Console.WriteLine(mensch.Vorname);
 
+            //Ausgabe der (überschriebenen) ToString()-Methoden
+            Console.WriteLine(lebewesen);
+            Console.WriteLine(mensch);
+            Console.WriteLine(mensch2);
+
+            //Aufruf einer Property eines abhängigen Objekts
+            Console.WriteLine(mensch2.Mutter.Alter);
+
+            #endregion
         }
     }
 }

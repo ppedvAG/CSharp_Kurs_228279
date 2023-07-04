@@ -59,10 +59,10 @@ namespace LibraryBsp
 
         //Es können mehrere Konstruktoren definiert werden, welche unterschiedliche Übergabeparameter haben (Überladung). Ein Konstruktor, der keine
         //Übergabeparameter hat, wird als Basiskonstruktor bezeichnet
-        //public Lebewesen()
-        //{
+        public Lebewesen()
+        {
 
-        //}
+        }
         #endregion
 
         #region Methoden
@@ -73,11 +73,17 @@ namespace LibraryBsp
             this.Größe++;
         }
 
+        //Mittels VIRTUAL wird den erbenden Klassen das Überschreiben der Member mittels override erlaubt
         public virtual Lebewesen ProduziereNachwuchs(string kindname)
         {
             return new Lebewesen(kindname, "Babynahrung", DateTime.Now, 30);
         }
 
+        //Mittels OVERRIDE können Methoden der Mutterklassen, welche mit VIRTUAL markiert sind, überschrieben werden. Bei Aufruf wird die neue Methode ausgeführt.
+        public override string ToString()
+        {
+            return $"{this.Name} ist {this.Alter} Jahre alt und mag gerne {this.Lieblingsnahrung}.";
+        }
         #endregion
 
         #region Statische Member
@@ -107,9 +113,7 @@ namespace LibraryBsp
         #endregion
 
 
-        public override string ToString()
-        {
-            return this.Name;
-        }
+
+
     }
 }
