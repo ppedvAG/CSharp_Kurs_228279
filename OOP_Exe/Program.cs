@@ -114,30 +114,48 @@ namespace OOP_Exe
 
             #endregion
 
+            #region Modul 10: Interfaces
 
-            Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6), 189);
-
+            //Instanziierung eines Beispiel-Objekts
+            Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6), 198);
+            //Betrachtung des Objekts als Objekt des Interfaces
             IArbeitend arbeitendesObjekt = mensch;
-
-            mensch.Auszahlung();
+            //Zugriff auf Interface-Methode
             arbeitendesObjekt.Auszahlung();
-
-            Gehaltserhöhung(mensch);
+            //Übergabe an Methode, welche ein Objekt des Interfaces erwartet
             Gehaltserhöhung(arbeitendesObjekt);
+            //Übergabe benötigt keinen Cast aus implementierender Klasse
+            Gehaltserhöhung(mensch);
+
+            //Aufruf der Clone()-Funktion des IClonable-Interfaces
+            Mensch kopierterMensch = (Mensch)mensch.Clone();
+            #endregion
         }
 
-        public static void Gehaltserhöhung(IArbeitend arbeitendesObjekt)
-        {
-            arbeitendesObjekt.Gehalt += 100;
-
-            if (arbeitendesObjekt is Mensch)
-                (arbeitendesObjekt as Mensch).Essen();
-        }
-
+        #region Modul 09 : Polymorphismus
         //Bsp-Methode für Übergabe eines Lebewesens (kann auch spezifische, abgeleitete Objekte, z.B. Mensch, empfangen)
         public static void ÄndereLieblingsnahrung(Lebewesen lebewesen, string neueNahrung)
         {
             lebewesen.Lieblingsnahrung = neueNahrung;
+        } 
+        #endregion
+
+        #region Modul 10: Interfaces
+        //Bsp-Methode, welche ein Objekt vom Typ des Interfaces verlangt
+        public static void Gehaltserhöhung(IArbeitend arbeitendesObjekt)
+        {
+            arbeitendesObjekt.Gehalt += 100;
+
+            //Prüfung des Objekts auf Laufzeittyp
+            if (arbeitendesObjekt is Mensch)
+            {
+                //Cast
+                Mensch mensch = (Mensch)arbeitendesObjekt;
+                mensch.Essen();
+            }
         }
+        #endregion
+
+      
     }
 }
