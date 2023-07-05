@@ -60,11 +60,11 @@ namespace Werte_Referenzen
             Console.WriteLine($"a:{a} b:{b}");
 
             //Referenztypen
-            Lebewesen lb1 = new Lebewesen() { Lieblingsnahrung = "Lasagne" };
-            Lebewesen lb2 = lb1;
-            Console.WriteLine($"lb1:{lb1.Lieblingsnahrung} lb2:{lb2.Lieblingsnahrung}");
-            lb1.Lieblingsnahrung = "Pizza";
-            Console.WriteLine($"lb1:{lb1.Lieblingsnahrung} lb2:{lb2.Lieblingsnahrung}");
+            //Lebewesen lb1 = new Lebewesen() { Lieblingsnahrung = "Lasagne" };
+            //Lebewesen lb2 = lb1;
+            //Console.WriteLine($"lb1:{lb1.Lieblingsnahrung} lb2:{lb2.Lieblingsnahrung}");
+            //lb1.Lieblingsnahrung = "Pizza";
+            //Console.WriteLine($"lb1:{lb1.Lieblingsnahrung} lb2:{lb2.Lieblingsnahrung}");
 
 
             //Instanziierung von Bsp-Objekten

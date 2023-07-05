@@ -26,14 +26,21 @@
                     Console.WriteLine($"{i}: {(Rechenoperation)i}");
                 }
 
+               
                 //Abfrage der Benutzereingabe
                 Rechenoperation operation = (Rechenoperation)Eingabe("Auswahl: ");
+                try
+                {
+                    //Deklaration und Initialisierung der Ergebnisvariablen
+                    double ergebnis = Berechne(zahl1, zahl2, operation, out string symbol);
 
-                //Deklaration und Initialisierung der Ergebnisvariablen
-                double ergebnis = Berechne(zahl1, zahl2, operation, out string symbol);
-
-                //Aufruf der Ausgabe-Funktion
-                Ausgabe(zahl1, zahl2, symbol, ergebnis);
+                    //Aufruf der Ausgabe-Funktion
+                    Ausgabe(zahl1, zahl2, symbol, ergebnis);
+                }
+                catch
+                {
+                    Console.WriteLine("\nFehlerhafte Eingabe der Rechenoperation");
+                }
 
                 //Frage nach der Wiederholung des Programms
                 Console.WriteLine("\nWiederholen? (Y/N) ");
@@ -91,7 +98,7 @@
                     symbol = "/";
                     return z1 / z2;
                 default:
-                    return double.NaN;
+                    throw new FormatException("Falsches Rechenzeichen");
             }
         }
     }

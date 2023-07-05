@@ -3,29 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M02_Grundlagen", "HalloWelt\M02_Grundlagen.csproj", "{A00AABC6-F6EB-4860-AB88-DC08F3230ADE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M02_Grundlagen", "HalloWelt\M02_Grundlagen.csproj", "{A00AABC6-F6EB-4860-AB88-DC08F3230ADE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L02_Geschwindigkeitsrechner", "Geschwindigkeitsrechner\L02_Geschwindigkeitsrechner.csproj", "{C8874317-6713-422B-9614-84B63E7CA988}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L02_Geschwindigkeitsrechner", "Geschwindigkeitsrechner\L02_Geschwindigkeitsrechner.csproj", "{C8874317-6713-422B-9614-84B63E7CA988}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M03_Arrays_Bedingungen", "Arrays_Bedingungen\M03_Arrays_Bedingungen.csproj", "{E892477F-FCAA-4BDF-8567-5F61F52FE3CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M03_Arrays_Bedingungen", "Arrays_Bedingungen\M03_Arrays_Bedingungen.csproj", "{E892477F-FCAA-4BDF-8567-5F61F52FE3CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L03_Schaltjahrrechner_Minilotto", "Schaltjahrrechner_Minilotto\L03_Schaltjahrrechner_Minilotto.csproj", "{98C80349-3F3B-45D1-B5A8-CC114BF20D8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L03_Schaltjahrrechner_Minilotto", "Schaltjahrrechner_Minilotto\L03_Schaltjahrrechner_Minilotto.csproj", "{98C80349-3F3B-45D1-B5A8-CC114BF20D8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M04_Schleifen_Enums", "Schleifen_Enums\M04_Schleifen_Enums.csproj", "{AF2D7B2F-EE54-41AF-93EB-F4DC6B19ADD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M04_Schleifen_Enums", "Schleifen_Enums\M04_Schleifen_Enums.csproj", "{AF2D7B2F-EE54-41AF-93EB-F4DC6B19ADD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L04_Taschenrechner", "Taschenrechner\L04_Taschenrechner.csproj", "{DD9542AC-87F2-4CC6-8249-7A9DEC1F71DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L04_Taschenrechner", "Taschenrechner\L04_Taschenrechner.csproj", "{DD9542AC-87F2-4CC6-8249-7A9DEC1F71DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M05_Funktionen", "Funktionen\M05_Funktionen.csproj", "{4C28928B-879B-43D0-B066-BC3B9FA582E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M05_Funktionen", "Funktionen\M05_Funktionen.csproj", "{4C28928B-879B-43D0-B066-BC3B9FA582E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L05_Taschenrechner02", "Taschenrechner02\L05_Taschenrechner02.csproj", "{D3348CB8-6FF9-4D2A-9499-EC07F7651398}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L05_Taschenrechner02", "Taschenrechner02\L05_Taschenrechner02.csproj", "{D3348CB8-6FF9-4D2A-9499-EC07F7651398}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M06f_LibraryBsp", "LibraryBsp\M06f_LibraryBsp.csproj", "{6A7F2C5B-7EF9-41E3-8F95-51E6D26A9965}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M06f_LibraryBsp", "LibraryBsp\M06f_LibraryBsp.csproj", "{6A7F2C5B-7EF9-41E3-8F95-51E6D26A9965}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M06f_OOP_Exe", "OOP_Exe\M06f_OOP_Exe.csproj", "{9117C2B4-47D4-4E11-91F5-73A48896B236}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M06f_OOP_Exe", "OOP_Exe\M06f_OOP_Exe.csproj", "{9117C2B4-47D4-4E11-91F5-73A48896B236}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L06f_Fahrzeugpark", "Fahrzeugpark\L06f_Fahrzeugpark.csproj", "{042FFDD9-1682-4602-99F7-C841701CF4DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L06f_Fahrzeugpark", "Fahrzeugpark\L06f_Fahrzeugpark.csproj", "{042FFDD9-1682-4602-99F7-C841701CF4DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M07_Werte_Referenzen", "Werte_Referenzen\M07_Werte_Referenzen.csproj", "{17EDC293-6CD2-45B3-B5FE-F8DC6D3D774A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M07_Werte_Referenzen", "Werte_Referenzen\M07_Werte_Referenzen.csproj", "{17EDC293-6CD2-45B3-B5FE-F8DC6D3D774A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{595AD2E1-4F60-44AA-B514-21F503C71FF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{8D3BAB76-82EA-4735-A603-061C7A5AE97E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +85,14 @@ Global
 		{17EDC293-6CD2-45B3-B5FE-F8DC6D3D774A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17EDC293-6CD2-45B3-B5FE-F8DC6D3D774A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17EDC293-6CD2-45B3-B5FE-F8DC6D3D774A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{595AD2E1-4F60-44AA-B514-21F503C71FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{595AD2E1-4F60-44AA-B514-21F503C71FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{595AD2E1-4F60-44AA-B514-21F503C71FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{595AD2E1-4F60-44AA-B514-21F503C71FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D3BAB76-82EA-4735-A603-061C7A5AE97E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D3BAB76-82EA-4735-A603-061C7A5AE97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D3BAB76-82EA-4735-A603-061C7A5AE97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D3BAB76-82EA-4735-A603-061C7A5AE97E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
