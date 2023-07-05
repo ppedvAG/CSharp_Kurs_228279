@@ -74,18 +74,21 @@ namespace LibraryBsp
         }
 
         //Mittels VIRTUAL wird den erbenden Klassen das Überschreiben der Member mittels override erlaubt
-        public abstract Lebewesen ProduziereNachwuchs(string kindname);
-        //{
-        //    return new Lebewesen(kindname, "Babynahrung", DateTime.Now, 30);
-        //}
-
-        public abstract void Essen();
+        public virtual Lebewesen ProduziereNachwuchs(string kindname)
+        {
+            //return new Lebewesen(kindname, "Babynahrung", DateTime.Now, 30);
+            return null;
+        }
 
         //Mittels OVERRIDE können Methoden der Mutterklassen, welche mit VIRTUAL markiert sind, überschrieben werden. Bei Aufruf wird die neue Methode ausgeführt.
         public override string ToString()
         {
             return $"{this.Name} ist {this.Alter} Jahre alt und mag gerne {this.Lieblingsnahrung}.";
         }
+
+        //Abstrakte Methoden dürfen nur in abstrakten Klassen existieren und definieren nur
+        ///eine Signatur. Die erbenden Klassen werden gezwungen eine Implementierung vorzunehmen
+        public abstract void Essen();
         #endregion
 
         #region Statische Member

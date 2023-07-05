@@ -75,39 +75,67 @@ namespace OOP_Exe
 
             #endregion
 
-            Lebewesen lebewesen;
+            #region Modul 09: Polymorphismus
 
-            Mensch mensch = new Mensch("Anna", "Nass", "Obst", new DateTime(2002, 2, 1), 167);
+            ////Deklaration einer Bsp-Variablen
+            //Lebewesen lebewesen;
+            ////Instanziierung eines Objekts der abgeleiteten Klasse
+            //Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6), 189);
 
-            lebewesen = mensch;
+            ////Zuweisung des abgeleiteten Objekts zu Variable der Mutterklasse
+            //lebewesen = mensch;
 
-            //Lebewesen[] mehereLebewesen = { new Lebewesen(), mensch };
+            ////Aufruf der unten stehenden Methode mit Übergabe eines Menschen in einem Lebewesen-Übergabeparameter
+            //ÄndereLieblingsnahrung(mensch, "Pizza");
 
-            ÄndereLieblingsnahrung("Gemüse", mensch);
+            ////Tests des Laufzeittyps (des beinhalteten Objekts)
+            //if (lebewesen.GetType() == typeof(Mensch))
+            //    Console.WriteLine("Lebewesen ist ein Mensch");
 
-            Console.WriteLine(lebewesen.ToString());
-            Console.WriteLine(mensch.ToString());
+            //if (lebewesen is Mensch)
+            //    Console.WriteLine("Lebewesen ist ein Mensch");
 
-            mensch.Essen();
-            lebewesen.Essen();
+            ////überschriebene Methoden werden trotzdem ausgeführt
+            //Console.WriteLine(lebewesen.ToString());
 
-            if (lebewesen.GetType() == typeof(Mensch))
-            { 
-                Mensch mensch2 = (Mensch)lebewesen; 
-            }
+            //if (lebewesen is Mensch)
+            //{
+            //    //Rückcast des abgeleiteten Objekts aus Mutterklassevariablen in abgeleitete Variable
+            //    Mensch mensch2 = (Mensch)lebewesen;
+            //    //Alternativer Cast
+            //    mensch2 = lebewesen as Mensch;
+            //}
 
-            if (lebewesen is Mensch)
-            { 
-                Mensch mensch2 = lebewesen as Mensch;
+            ////Aufruf einer überschriebenen Methode durch eine Basisklassenvariable (Funktion des Laufzeittypen wird ausgeführt)
+            //Console.WriteLine(lebewesen.ToString());
 
-                (lebewesen as Mensch).Vorname = "Jürgen";
-            }
+            ////Aufruf einer abstrakten Methode
+            //lebewesen.Essen();
+
+            #endregion
 
 
+            Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6), 189);
 
+            IArbeitend arbeitendesObjekt = mensch;
+
+            mensch.Auszahlung();
+            arbeitendesObjekt.Auszahlung();
+
+            Gehaltserhöhung(mensch);
+            Gehaltserhöhung(arbeitendesObjekt);
         }
 
-        public static void ÄndereLieblingsnahrung(string neueNahrung, Lebewesen lebewesen)
+        public static void Gehaltserhöhung(IArbeitend arbeitendesObjekt)
+        {
+            arbeitendesObjekt.Gehalt += 100;
+
+            if (arbeitendesObjekt is Mensch)
+                (arbeitendesObjekt as Mensch).Essen();
+        }
+
+        //Bsp-Methode für Übergabe eines Lebewesens (kann auch spezifische, abgeleitete Objekte, z.B. Mensch, empfangen)
+        public static void ÄndereLieblingsnahrung(Lebewesen lebewesen, string neueNahrung)
         {
             lebewesen.Lieblingsnahrung = neueNahrung;
         }
