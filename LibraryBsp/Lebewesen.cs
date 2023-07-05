@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace LibraryBsp
 {
     //KLASSEN sind Vorlagen für Objekte. Sie bestimmen Eigenschaften und Funktionen dieser.
-    public class Lebewesen //zur Verwendung vgl. OOP_Exe/Program.cs
+    public abstract class  Lebewesen //zur Verwendung vgl. OOP_Exe/Program.cs
     {
         #region Felder und Eigenschaften
         //FELDER (Membervariablen) sind die Variablen einzelner Objekte, welche die Zustände dieser Objekte definieren
@@ -74,10 +74,12 @@ namespace LibraryBsp
         }
 
         //Mittels VIRTUAL wird den erbenden Klassen das Überschreiben der Member mittels override erlaubt
-        public virtual Lebewesen ProduziereNachwuchs(string kindname)
-        {
-            return new Lebewesen(kindname, "Babynahrung", DateTime.Now, 30);
-        }
+        public abstract Lebewesen ProduziereNachwuchs(string kindname);
+        //{
+        //    return new Lebewesen(kindname, "Babynahrung", DateTime.Now, 30);
+        //}
+
+        public abstract void Essen();
 
         //Mittels OVERRIDE können Methoden der Mutterklassen, welche mit VIRTUAL markiert sind, überschrieben werden. Bei Aufruf wird die neue Methode ausgeführt.
         public override string ToString()

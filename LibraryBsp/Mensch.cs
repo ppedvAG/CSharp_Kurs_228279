@@ -24,7 +24,7 @@ namespace LibraryBsp
         //Mittels OVERRIDE können Methoden der Mutterklassen, welche mit VIRTUAL markiert sind, überschrieben werden. Bei Aufruf wird die neue Methode ausgeführt.
         //Mittels BASE kann ein Rückbezug zur nächst-höheren Klasse hergestellt werden.
         //Mit SEALED kann eine Überschreibung durch Kindklassen verindert werden.
-        public sealed override string ToString()
+        public new string ToString()
         {
             string ausgabe = $"Der Mensch {this.Vorname} " + base.ToString();
             if (this.Mutter != null)
@@ -32,10 +32,14 @@ namespace LibraryBsp
             return ausgabe;
         }
 
-
         public override Lebewesen ProduziereNachwuchs(string kindname)
         {
             return new Mensch(kindname, this.Name, "Muttermilch", DateTime.Now, 30) { Mutter = this };
+        }
+
+        public override void Essen()
+        {
+            Console.WriteLine($"{this.Vorname} isst {this.Lieblingsnahrung}.");
         }
     }
 }

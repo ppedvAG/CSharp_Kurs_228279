@@ -51,30 +51,65 @@ namespace OOP_Exe
 
             #endregion
 
-
             #region Modul 08: Vererbung
 
-            //Instanziierung eines Objekts der vererbenden Klasse
-            Lebewesen lebewesen = new Lebewesen("Bello", "Fleisch", new DateTime(2007, 4, 23), 70);
-            //Instanziierung eines Objekts der abgeleiteten Klasse
-            Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6), 189);
-            Mensch mensch2 = (Mensch)mensch.ProduziereNachwuchs("Maria");
-            //Aufruf von Properties und Methoden, welche aus der Mutterklasse stammen
-            Console.WriteLine(mensch.Alter);
-            Console.WriteLine(mensch.Name);
+            ////Instanziierung eines Objekts der vererbenden Klasse
+            //Lebewesen lebewesen = new Lebewesen("Bello", "Fleisch", new DateTime(2007, 4, 23), 70);
+            ////Instanziierung eines Objekts der abgeleiteten Klasse
+            //Mensch mensch = new Mensch("Anna", "Meier", "Lasagne", new DateTime(1984, 5, 6), 189);
+            //Mensch mensch2 = (Mensch)mensch.ProduziereNachwuchs("Maria");
+            ////Aufruf von Properties und Methoden, welche aus der Mutterklasse stammen
+            //Console.WriteLine(mensch.Alter);
+            //Console.WriteLine(mensch.Name);
 
-            //Aufruf einer Property der abgeleiteten Klasse
-            Console.WriteLine(mensch.Vorname);
+            ////Aufruf einer Property der abgeleiteten Klasse
+            //Console.WriteLine(mensch.Vorname);
 
-            //Ausgabe der (überschriebenen) ToString()-Methoden
-            Console.WriteLine(lebewesen);
-            Console.WriteLine(mensch);
-            Console.WriteLine(mensch2);
+            ////Ausgabe der (überschriebenen) ToString()-Methoden
+            //Console.WriteLine(lebewesen);
+            //Console.WriteLine(mensch);
+            //Console.WriteLine(mensch2);
 
-            //Aufruf einer Property eines abhängigen Objekts
-            Console.WriteLine(mensch2.Mutter.Alter);
+            ////Aufruf einer Property eines abhängigen Objekts
+            //Console.WriteLine(mensch2.Mutter.Alter);
 
             #endregion
+
+            Lebewesen lebewesen;
+
+            Mensch mensch = new Mensch("Anna", "Nass", "Obst", new DateTime(2002, 2, 1), 167);
+
+            lebewesen = mensch;
+
+            //Lebewesen[] mehereLebewesen = { new Lebewesen(), mensch };
+
+            ÄndereLieblingsnahrung("Gemüse", mensch);
+
+            Console.WriteLine(lebewesen.ToString());
+            Console.WriteLine(mensch.ToString());
+
+            mensch.Essen();
+            lebewesen.Essen();
+
+            if (lebewesen.GetType() == typeof(Mensch))
+            { 
+                Mensch mensch2 = (Mensch)lebewesen; 
+            }
+
+            if (lebewesen is Mensch)
+            { 
+                Mensch mensch2 = lebewesen as Mensch;
+
+                (lebewesen as Mensch).Vorname = "Jürgen";
+            }
+
+
+
+        }
+
+        public static void ÄndereLieblingsnahrung(string neueNahrung, Lebewesen lebewesen)
+        {
+            lebewesen.Lieblingsnahrung = neueNahrung;
         }
     }
 }
