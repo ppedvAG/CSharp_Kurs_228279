@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace LibraryBsp
 {
+    //Ein INTERFACE zwingt die implementierenden Klassen bestimmte Methoden und Eigenschaften zu implementieren, so dass diesbezüglich 
+    ///eine Typsicherheit besteht. Dieses Interface fordert die Implementierung einer Methode und einer Eigenschaft und ermöglicht
+    ///einer Klasse 'einer Arbeit nachzugehen'.
     public interface IArbeitend
     {
-        public string Job { get; set; }
-        public int Gehalt { get; set; }
+        //In einem Interface sind idR keine Zugriffsmodifier erlaubt
+        int Gehalt { get; set; }
+
+        string Job { get; set; }
+
+        //Es werden (wie bei abstarkten Methoden) idR nur die Methodenköpfe geschrieben. Der Rest wird in den implementierenden Klassen hinzugefügt
         void Auszahlung();
     }
 }

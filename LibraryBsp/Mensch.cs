@@ -68,13 +68,5 @@ namespace LibraryBsp
             neuerMensch.Mutter = this.Mutter;
             return neuerMensch;
         }
-
-        //Alternativ zu IClonable kann ein Kopierkonstruktor zur Dublizierung verwendet werden. Hier werden die Werte und Referenzen koiert und übertragen
-        public Mensch(Mensch alterMensch)
-        {
-            this.Vorname = alterMensch.Vorname;
-            this.Name = alterMensch.Name;
-            //...
-        }
     }
 }
