@@ -1,59 +1,72 @@
-﻿namespace ExceptionHandling
+﻿//Mittels EXCEPTION-HANDLING werden Laufzeitfehler kommuniziert und verwaltet
+namespace ExceptionHandling
 {
+    //Eigene Exceptions müssen von der Klasse Exception erben, damit diese Mechanik verwendet werden kann
     class MeineException : Exception
     {
-        public MeineException(string msg) : base(msg)
+        public MeineException() : base("Dies ist mein Fehler")
         {
-                
+
         }
     }
 
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            bool wdh = false;
-
+            bool wdh;
             do
             {
-                string eingabe = Console.ReadLine();
-
+                wdh = false;
+                //Im TRY-Block steht der Code, welcher potenziell Fehler produzieren kann
                 try
                 {
-                    int zahl = int.Parse(eingabe);
+                    string eingabe = Console.ReadLine();
+                    int zahl = int.Parse(eingabe); //int.Parse kann diverse verschiedene Exceptions werfen
 
                     if (zahl == 0)
-                        ThrowMeineException();
+                        //Mittels THROW werden Exceptions manuell geworfen
+                        Test();
 
-                    Console.WriteLine(zahl * 2);
-                    wdh = false;
+                    //Der Wurf einer Exception verhindert die weitere Ausführung des Try-Blocks
+                    Console.WriteLine("Ende Try");
                 }
+                //Die CATCH-Blöcke fangen die jeweiligen Exceptions ab und sollen diese bearbeiten
                 catch (FormatException ex)
                 {
-                    Console.WriteLine("Du darfst nur Zahlen eingeben. " + ex.Message);
+                    Console.WriteLine("Du musst eine Zahl eingeben. " + ex.Message);
                     wdh = true;
                 }
                 catch (OverflowException ex)
                 {
-                    Console.WriteLine("Deine Zahl ist zu groß/klein. " + ex.Message);
+                    Console.WriteLine("Deine Zahl ist zu groß/zu klein. " + ex.Message);
                     wdh = true;
                 }
+                catch (MeineException ex)
+                {
+                    Console.WriteLine("Gib keine Null ein! " + ex.Message);
+                    throw;
+                }
+                //Allgemeine Catch-Blöcke fangen jede Excpetion ab (es gilt der Polymorphismus)
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Ein unbekannter Fehler ist aufgetreten. " + ex.Message);
+                    Console.WriteLine("Ein unbekannter Fehler ist aufgetreten.");
                 }
+                //Der optinale FINALLY-Block wird in jedem Fall immer ausgeführt
                 finally
                 {
-                    Console.WriteLine("FINALLY");
+                    Console.WriteLine("Wird immer ausgeführt");
                 }
-            } while (wdh);
+            }
+            while (wdh);
 
-            Console.WriteLine("ENDE");
         }
 
-        static void ThrowMeineException()
+        static void Test()
         {
-            throw new MeineException("0 ist doof");
+            //Mittels THROW werden Exceptions manuell geworfen
+            throw new MeineException();
+            Console.WriteLine("Niemals");
         }
     }
 }

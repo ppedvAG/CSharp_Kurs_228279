@@ -27,9 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L06f_Fahrzeugpark", "Fahrze
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M07_Werte_Referenzen", "Werte_Referenzen\M07_Werte_Referenzen.csproj", "{17EDC293-6CD2-45B3-B5FE-F8DC6D3D774A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{595AD2E1-4F60-44AA-B514-21F503C71FF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M12_ExceptionHandling", "ExceptionHandling\M12_ExceptionHandling.csproj", "{595AD2E1-4F60-44AA-B514-21F503C71FF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{8D3BAB76-82EA-4735-A603-061C7A5AE97E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M12_UnitTests", "UnitTests\M12_UnitTests.csproj", "{8D3BAB76-82EA-4735-A603-061C7A5AE97E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
