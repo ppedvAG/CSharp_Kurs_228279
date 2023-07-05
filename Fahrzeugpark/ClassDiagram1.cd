@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Fahrzeugpark.Fahrzeug">
+    <Position X="5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAQEEAAAAAEQAAAAAgEEAAAAAUEQQAAA=</HashCode>
+      <FileName>Fahrzeug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fahrzeugpark.Flugzeug" Collapsed="true">
+    <Position X="5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAA=</HashCode>
+      <FileName>Flugzeug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fahrzeugpark.PKW" Collapsed="true">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAA=</HashCode>
+      <FileName>PKW.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fahrzeugpark.Program">
+    <Position X="7.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fahrzeugpark.Schiff">
+    <Position X="7.25" Y="6.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Fahrzeugpark.Schiff.SchiffsTreibstoff" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Schiff.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAAAAQQEAABAA=</HashCode>
+      <FileName>Schiff.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Fahrzeugpark.IBeladbar">
+    <Position X="9" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>IBeladbar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
