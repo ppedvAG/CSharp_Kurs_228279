@@ -33,13 +33,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M12_UnitTests", "UnitTests\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L12_ExceptionLab", "ExceptionLab\L12_ExceptionLab.csproj", "{14F07030-CAEA-414F-9D82-1F3DB9725254}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M13_Delegates", "Delegates\M13_Delegates.csproj", "{869B91BA-A668-4C02-8A2F-02374D794BE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M13_Delegates", "Delegates\M13_Delegates.csproj", "{869B91BA-A668-4C02-8A2F-02374D794BE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M14_WindowsFormsBsp", "WindowsFormsBsp\M14_WindowsFormsBsp.csproj", "{4BDB4BF8-EE0E-4DA0-AB73-DF5B6B887087}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M14_WindowsFormsBsp", "WindowsFormsBsp\M14_WindowsFormsBsp.csproj", "{4BDB4BF8-EE0E-4DA0-AB73-DF5B6B887087}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L14_FahrzeugGUI", "FahrzeugGUI\L14_FahrzeugGUI.csproj", "{63746F04-1020-4DFF-9F9F-CCDC2355FF77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "L14_FahrzeugGUI", "FahrzeugGUI\L14_FahrzeugGUI.csproj", "{63746F04-1020-4DFF-9F9F-CCDC2355FF77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dateizugriff", "Dateizugriff\Dateizugriff.csproj", "{562CB592-358A-4818-8C28-2D5DA45126BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M15_Dateizugriff", "Dateizugriff\M15_Dateizugriff.csproj", "{562CB592-358A-4818-8C28-2D5DA45126BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBsp", "WpfBsp\WpfBsp.csproj", "{1F6FFEAB-4FFD-4522-AA9D-DFC06C1D448A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{562CB592-358A-4818-8C28-2D5DA45126BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{562CB592-358A-4818-8C28-2D5DA45126BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{562CB592-358A-4818-8C28-2D5DA45126BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6FFEAB-4FFD-4522-AA9D-DFC06C1D448A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6FFEAB-4FFD-4522-AA9D-DFC06C1D448A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6FFEAB-4FFD-4522-AA9D-DFC06C1D448A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6FFEAB-4FFD-4522-AA9D-DFC06C1D448A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

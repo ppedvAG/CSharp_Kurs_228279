@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Tbx_Main = new TextBox();
+            Tbx_Input = new TextBox();
             Btn_Save = new Button();
             Btn_Load = new Button();
             Btn_SavePersons = new Button();
             Btn_LoadPersons = new Button();
             SuspendLayout();
             // 
-            // Tbx_Main
+            // Tbx_Input
             // 
-            Tbx_Main.AcceptsReturn = true;
-            Tbx_Main.Location = new Point(62, 56);
-            Tbx_Main.Multiline = true;
-            Tbx_Main.Name = "Tbx_Main";
-            Tbx_Main.Size = new Size(244, 278);
-            Tbx_Main.TabIndex = 0;
+            Tbx_Input.AcceptsReturn = true;
+            Tbx_Input.Location = new Point(62, 56);
+            Tbx_Input.Multiline = true;
+            Tbx_Input.Name = "Tbx_Input";
+            Tbx_Input.Size = new Size(244, 278);
+            Tbx_Input.TabIndex = 0;
             // 
             // Btn_Save
             // 
@@ -72,7 +72,7 @@
             Btn_SavePersons.TabIndex = 3;
             Btn_SavePersons.Text = "Speichere Personen";
             Btn_SavePersons.UseVisualStyleBackColor = true;
-            Btn_SavePersons.Click += Btn_SavePersons_Click;
+            Btn_SavePersons.Click += Btn_SaveP_Click;
             // 
             // Btn_LoadPersons
             // 
@@ -82,7 +82,7 @@
             Btn_LoadPersons.TabIndex = 4;
             Btn_LoadPersons.Text = "Lade Personen";
             Btn_LoadPersons.UseVisualStyleBackColor = true;
-            Btn_LoadPersons.Click += Btn_LoadPersons_Click;
+            Btn_LoadPersons.Click += Btn_LoadP_Click;
             // 
             // Form1
             // 
@@ -93,7 +93,7 @@
             Controls.Add(Btn_SavePersons);
             Controls.Add(Btn_Load);
             Controls.Add(Btn_Save);
-            Controls.Add(Tbx_Main);
+            Controls.Add(Tbx_Input);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -102,7 +102,7 @@
 
         #endregion
 
-        private TextBox Tbx_Main;
+        private TextBox Tbx_Input;
         private Button Btn_Save;
         private Button Btn_Load;
         private Button Btn_SavePersons;
