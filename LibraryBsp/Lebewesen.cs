@@ -19,7 +19,7 @@ namespace LibraryBsp
         //Snippet: propfull
         public string Name
         {
-            get { return name; }
+            get => name;
             private set
             {
                 //Das Schlüsselwort VALUE beschreibt in einer Set-Methode den übergebenen Wert
